@@ -2,6 +2,7 @@
 {% block content %}
 <h1>Animal Gallery</h1>
 <div class="gallery">
-    <img src="{% static 'silkie_chickens-1895834930.jpg' %}" alt="Chicken">
+    {% load static %}
+    <img src="{% static 'silkie.jpg' %}" alt="Chicken">
 </div>
 {% endblock %}
