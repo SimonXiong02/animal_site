@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favourite Animal Website</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a> |
+    </nav>
+    <hr>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
