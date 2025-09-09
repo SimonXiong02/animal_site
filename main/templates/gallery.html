@@ -3,8 +3,19 @@
 <h1>Animal Gallery</h1>
 <div class="gallery">
     {% load static %}
-    <img src="{% static 'silkie.jpg' %}" alt="Chicken">
-    <img src="{% static 'silkie_2.jpg' %}" alt="Chicken_2">
-    <img src="{% static 'silkie_3.jpg' %}" alt="Chicken_3">
+    <img src="{% static 'silkie.jpg' %}" alt="Silkie">
+    <img src="{% static 'silkie_2.jpg' %}" alt="Silkie">
+    <img src="{% static 'silkie_3.jpg' %}" alt="Silkie">
+    <img src="{% static 'silkie_4.jpg' %}" alt="Silkie">
 </div>
-{% endblock %}
+<p>These are some examples of silkie chickens around the world.</p>
+<h>Silkie facts:
+    1. There have a very unique appearance as shown on the images above. They often appear in a soft, fluffy and silkly
+    with a black beak. Under their feathers they have a black skin
+</h>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="caption"></div>
+    {% endblock %}
