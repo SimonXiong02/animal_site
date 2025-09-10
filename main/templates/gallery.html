@@ -3,10 +3,21 @@
 <h1>Animal Gallery</h1>
 <div class="gallery">
     {% load static %}
-    <img src="{% static 'silkie.jpg' %}" alt="Silkie">
-    <img src="{% static 'silkie_2.jpg' %}" alt="Silkie">
-    <img src="{% static 'silkie_3.jpg' %}" alt="Silkie">
-    <img src="{% static 'silkie_4.jpg' %}" alt="Silkie">
+    <a href="{% static 'silkie.jpg' %}" target="_blank">
+        <img src="{% static 'silkie.jpg' %}" alt="Silkie">
+    </a>
+
+    <a href="{% static 'silkie_2.jpg' %}" target="_blank">
+        <img src="{% static 'silkie_2.jpg' %}" alt="Silkie">
+    </a>
+
+    <a href="{% static 'silkie_3.jpg' %}" target="_blank">
+        <img src="{% static 'silkie_3.jpg' %}" alt="Silkie">
+    </a>
+
+    <a href="{% static 'silkie_4.jpg' %}" target="_blank">
+        <img src="{% static 'silkie_4.jpg' %}" alt="Silkie">
+    </a>
 </div>
 <p>These are some examples of silkie chickens around the world.</p>
 <h>Silkie facts:
@@ -14,8 +25,8 @@
     with a black beak. Under their feathers they have a black skin
 </h>
 
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="close">&times;</span>
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
     <img class="lightbox-content" id="lightbox-img">
     <div id="caption"></div>
     <a class="prev" onclick="changeImage(-1)">&#10094;</a>
