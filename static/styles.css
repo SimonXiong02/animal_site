@@ -55,3 +55,29 @@ nav a {
     font-size: 40px;
     cursor: pointer;
 }
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+.prev:hover,
+.next:hover {
+    color: #f1f1f1;
+}
