@@ -1,27 +1,62 @@
+.home-h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-h2 {
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home_silkie_in_hands img {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 25%;
+    display: flex;
+}
+
+.faq-h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.faq-h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: left;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #141E30, #243B55);
+    background: #99d98c;
     font-family: Arial, sans-serif;
-    color: white;
+    color: black;
+    padding: 25px;
+    padding-right: 25px;
 }
 
 nav {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px 20px;
+    background: rgb(0, 0, 0);
+    padding: 25px;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 80px;
+    justify-content: safe center;
     border-radius: 30px;
     position: relative;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    top: 5px;
+    left: 0%;
 }
 
 nav a {
-    color: white;
+    color: #99d98c;
     font-weight: bold;
     transition: color 0.3s, transform 0.2s;
     margin-right: 15px;
@@ -30,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #87CEFA;
+    color: green;
     transform: scale(1.1);
 }
 
@@ -106,4 +141,22 @@ nav a:hover {
 .prev:hover,
 .next:hover {
     color: #f1f1f1;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.contact img {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact img:hover {
+    transform: scale(1.05);
 }

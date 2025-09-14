@@ -1,20 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Contact Me</h1>
-{% if success %}
-<p>Thanks! Your message has been sent.</p>
-{% endif %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Send</button>
-</form>
+<div class="contact">
+    {% if success %}
+    <p>Thanks! Your message has been sent.</p>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send</button>
+    </form>
 
-<p>ABOUT ME:</p>
-<p>I am Simon a year 11 student from our school and I very like silkie chickens.</p>
+    <p>ABOUT ME:</p>
+    <p>I am Simon a year 11 student from our school and I very like silkie chickens.</p>
 
-{% load static %}
-<a href="{% static 'Chicken_me.jpeg' %}" target="_blank">
-    <img src="{% static 'Chicken_me.jpeg' %}" alt="Chicken">
-</a>
-{% endblock %}
+    {% load static %}
+    <a href="{% static 'Chicken_me.jpeg' %}" target="_blank">
+        <img src="{% static 'Chicken_me.jpeg' %}" alt="Chicken">
+    </a>
+</div>
+<div>
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+    {% endblock %}
