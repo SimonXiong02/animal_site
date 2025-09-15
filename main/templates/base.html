@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Favourite Animal Website</title>
@@ -15,8 +15,8 @@
         <a href="{% url 'faq' %}">FAQ</a> |
     </nav>
     <hr>
-    <div class="content">
-        {% block content %}{% endblock %}
+    <div class="content"></div>
+    {% block content %}{% endblock %}
     </div>
     <script>
         let currentIndex = 0;
