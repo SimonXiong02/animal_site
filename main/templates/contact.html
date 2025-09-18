@@ -2,22 +2,29 @@
 {% block content %}
 <h1>Contact Me</h1>
 <div class="contact">
-    {% if success %}
-    <p>Thanks. Your message has been sent.</p>
+
+    {% if message %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li class="success">{{ message }}</li>
+        {% endfor %}
+    </ul>
     {% endif %}
-    <form method="post">
+
+    <form method="post" class="contact-form">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Send</button>
     </form>
 
     <p>ABOUT ME:</p>
-    <p>I am Simon a year 11 student and I very like silkie chickens.</p>
+    <p>I am Simon a year 11 student and I like silkie chickens very much.</p>
 
     {% load static %}
     <a href="{% static 'Chicken_me.jpeg' %}">
         <img src="{% static 'Chicken_me.jpeg' %}" alt="Chicken">
     </a>
+
 </div>
 <div id="lightbox" class="lightbox">
     <span class="close" onclick="closeLightbox()">&times;</span>

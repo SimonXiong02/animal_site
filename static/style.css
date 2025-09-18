@@ -167,3 +167,20 @@ nav a:hover {
 .contact img:hover {
     transform: scale(1.05);
 }
+
+.messages {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.success {
+    background: black;
+    color: red;
+    border: 1px solid #bfde29;
+    padding: 10px;
+    border-radius: 8px;
+}
