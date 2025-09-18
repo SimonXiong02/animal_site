@@ -28,9 +28,16 @@
 }
 
 .faq-h3 {
-    font-size: 25px;
-    font-weight: lighter;
-    text-align: left;
+    font-size: 30px;
+}
+
+.faq-p {
+    font-size: 150%;
+}
+
+.faq-h3::before {
+    content: "• ";
+    color: black;
 }
 
 body {
