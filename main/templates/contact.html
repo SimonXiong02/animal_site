@@ -15,15 +15,13 @@
     <p>I am Simon a year 11 student and I very like silkie chickens.</p>
 
     {% load static %}
-    <a href="{% static 'Chicken_me.jpeg' %}" target="_blank">
+    <a href="{% static 'Chicken_me.jpeg' %}">
         <img src="{% static 'Chicken_me.jpeg' %}" alt="Chicken">
     </a>
 </div>
 <div id="lightbox" class="lightbox">
     <span class="close" onclick="closeLightbox()">&times;</span>
     <img class src="lightbox-content" id="lightbox-img" alt="lightBox">
-    <div id="caption"></div>
-    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-    <a class="next" onclick="changeImage(1)">&#10095;</a>
+    <div id="lightbox-img"></div>
 </div>
 {% endblock %}
